@@ -1,0 +1,13 @@
+{
+    "INTRO": "¡Esta aplicación muestra estadísticas de datos!",
+    "SUBINTRO": "Usa los botones en la parte superior para acceder a los diferentes gráficos",
+    "PIE": "Circular",
+    "BAR": "Barra",
+    "LINE": "Línea",
+    "PIE-DESCRIPTION": "Esta parte de la página mostrará un gráfico circular",
+    "PIE-SUBDESCRIPTION": "Prueba a interactuar con las diferentes etiquetas de datos para mostrar u ocultar información a tu gusto",
+    "BAR-DESCRIPTION": "¡Este es un gráfico de barras! Mostrará datos útiles que se recopilan dinámicamente a través de la interacción con la API",
+    "BAR-SUBDESCRIPTION": "Puedes seleccionar y eliminar datos específicos utilizando las etiquetas en la parte superior",
+    "LINE-DESCRIPTION": "Este componente, en cambio, mostrará un gráfico de líneas que muestra datos de varios países. Intenta interactuar con las etiquetas para mostrar y ocultar datos",
+    "LINE-SUBDESCRIPTION": "Interactúa con las etiquetas para mostrar y ocultar parte de los datos"
+}
