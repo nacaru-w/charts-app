@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterLink } from '@angular/router';
+import { NgbDropdownModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgbNavModule],
+  imports: [NgbNavModule, RouterLink, NgbDropdownModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
 }

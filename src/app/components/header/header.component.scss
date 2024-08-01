@@ -3,4 +3,10 @@
     display: flex;
     gap: 1em;
     justify-content: center;
+
+    .home-icon,
+    .globe-icon {
+        font-size: larger;
+    }
+
 }
