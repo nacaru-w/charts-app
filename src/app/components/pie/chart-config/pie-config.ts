@@ -1,9 +1,23 @@
 import { colors } from "../../../utils/utils";
+import * as en from '../../../../assets/locales/en.json'
+import * as es from '../../../../assets/locales/es.json'
+import * as fr from '../../../../assets/locales/fr.json'
 
-const labels = ['Democrat', 'Republican', 'Independent', 'Other']
+export const labels = {
+    party: {
+        en: en.PIE.CHART.LEGEND,
+        es: es.PIE.CHART.LEGEND,
+        fr: fr.PIE.CHART.LEGEND
+    },
+    votes: {
+        en: en.PIE.CHART.TAGS.VOTES,
+        es: es.PIE.CHART.TAGS.VOTES,
+        fr: fr.PIE.CHART.TAGS.VOTES
+    }
+}
 
 export const pieData = {
-    labels: labels,
+    labels: [],
     datasets: [{
         label: 'Votes',
         data: [455, 433, 277, 77],

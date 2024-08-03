@@ -2,28 +2,38 @@
     <li ngbNavItem routerLink="main">
         <button ngbNavLink routerLink="home"><i class="las la-home home-icon"></i></button>
     </li>
+    <div class="chart-menu-options">
+        <li ngbNavItem>
+            <button ngbNavLink routerLink="pie">{{ 'PIE.NAME' | translate }}</button>
+        </li>
+        <li ngbNavItem>
+            <button ngbNavLink routerLink="bar">{{ 'BAR.NAME' | translate }}</button>
+        </li>
+        <li ngbNavItem>
+            <button ngbNavLink routerLink="line">{{ 'LINE.NAME' | translate }}</button>
+        </li>
+    </div>
+    <div class="chart-menu-options-dropdown">
+        <div ngbDropdown class="lang-menu">
+            <button type="button" class="btn btn-outline-primary" id="languages" ngbDropdownToggle>
+                <i class="las la-chart-pie pie-icon"></i>
+            </button>
+            <div ngbDropdownMenu aria-labelledby="languages">
+                <button ngbDropdownItem routerLink="pie">{{ 'PIE.NAME' | translate }}</button>
+                <button ngbDropdownItem routerLink="bar">{{ 'BAR.NAME' | translate }}</button>
+                <button ngbDropdownItem routerLink="line">{{ 'LINE.NAME' | translate }}</button>
+            </div>
+        </div>
+    </div>
     <li ngbNavItem>
-        <button ngbNavLink routerLink="pie">Pie</button>
-    </li>
-    <li ngbNavItem>
-        <button ngbNavLink routerLink="bar">Bar</button>
-    </li>
-    <li ngbNavItem>
-        <button ngbNavLink routerLink="line">Line</button>
-    </li>
-    <li>
-        <div class="row">
-            <div class="col">
-                <div ngbDropdown class="d-inline-block">
-                    <button type="button" class="btn btn-outline-primary" id="languages" ngbDropdownToggle>
-                        <i class="las la-globe globe-icon"></i>
-                    </button>
-                    <div ngbDropdownMenu aria-labelledby="languages">
-                        <button ngbDropdownItem>🇪🇸 Español</button>
-                        <button ngbDropdownItem>🇫🇷 Français</button>
-                        <button ngbDropdownItem>🇬🇧 English</button>
-                    </div>
-                </div>
+        <div ngbDropdown class="lang-menu">
+            <button type="button" class="btn btn-outline-primary" id="languages" ngbDropdownToggle>
+                <i class="las la-globe globe-icon"></i>
+            </button>
+            <div ngbDropdownMenu aria-labelledby="languages">
+                <button ngbDropdownItem (click)="switchLanguage('es')">🇪🇸 Español</button>
+                <button ngbDropdownItem (click)="switchLanguage('fr')">🇫🇷 Français</button>
+                <button ngbDropdownItem (click)="switchLanguage('en')">🇬🇧 English</button>
             </div>
         </div>
     </li>

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js/auto';
 import { BaseChartDirective } from 'ng2-charts';
-import { barData, barOptions } from './chart-config/bar-config';
+import { barData, barOptions, labels } from './chart-config/bar-config';
 import { bodyFont, bodyFontColor } from '../../utils/utils';
-import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { TranslateService, TranslateModule, LangChangeEvent } from '@ngx-translate/core';
+import { Languages } from '../../models/lang-models';
 
 @Component({
   selector: 'app-bar',
@@ -15,16 +16,24 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 export class BarComponent implements OnInit {
 
   barChart: any;
+  currentLang: Languages;
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
-    // Use browser language if available
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang && browserLang.match(/en|fr|es/) ? browserLang : 'en');
+    this.currentLang = this.translate.currentLang as Languages;
   }
 
   ngOnInit(): void {
     this.buildChart();
+    this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+      const language: Languages = event.lang as Languages;
+      this.currentLang = language;
+      this.updateLabels(this.currentLang);
+    })
+  }
+
+  updateLabels(language: Languages): void {
+    this.barChart.data.labels = labels[language];
+    this.barChart.update()
   }
 
   buildChart(): void {
@@ -38,6 +47,8 @@ export class BarComponent implements OnInit {
       data: barData,
       options: barOptions,
     })
+
+    this.updateLabels(this.currentLang)
 
   }
 

@@ -1,13 +1,46 @@
 {
     "INTRO": "Cette application montre des statistiques de données!",
     "SUBINTRO": "Utilisez les boutons en haut pour accéder aux différents graphiques",
-    "PIE": "Camembert",
-    "BAR": "Barre",
-    "LINE": "Ligne",
-    "PIE-DESCRIPTION": "Cette partie de la page affichera un graphique circulaire",
-    "PIE-SUBDESCRIPTION": "Essayez d'interagir avec les différentes étiquettes de données pour afficher ou masquer des informations à votre guise",
-    "BAR-DESCRIPTION": "Ceci est un graphique à barres! Il affichera des données utiles qui sont recueillies dynamiquement grâce à l'interaction avec l'API",
-    "BAR-SUBDESCRIPTION": "Vous pouvez sélectionner et supprimer des données spécifiques en utilisant les étiquettes en haut",
-    "LINE-DESCRIPTION": "Ce composant, quant à lui, affichera un graphique en ligne montrant des données pour plusieurs pays. Essayez d'interagir avec les étiquettes pour en afficher ou en masquer certaines",
-    "LINE-SUBDESCRIPTION": "Essayez d'interagir avec les étiquettes pour en afficher ou masquer certaines données"
+    "PIE": {
+        "NAME": "Secteur",
+        "DESCRIPTION": "Cette partie de la page affichera un graphique circulaire",
+        "SUBDESCRIPTION": "Essayez d'interagir avec les différentes étiquettes de données pour afficher ou masquer des informations à votre guise",
+        "CHART": {
+            "LEGEND": [
+                "Démocrate",
+                "Républicain",
+                "Indépendant",
+                "Autre"
+            ],
+            "TAGS": {
+                "VOTES": "Total de votes"
+            }
+        }
+    },
+    "BAR": {
+        "NAME": "Barre",
+        "DESCRIPTION": "Ceci est un graphique à barres! Il affichera des données utiles qui sont recueillies dynamiquement grâce à l'interaction avec l'API",
+        "SUBDESCRIPTION": "Vous pouvez sélectionner et supprimer des données spécifiques en utilisant les étiquettes en haut",
+        "CHART": {
+            "LEGEND": [
+                "Turquoise",
+                "Bleu",
+                "Violet"
+            ]
+        }
+    },
+    "LINE": {
+        "NAME": "Ligne",
+        "DESCRIPTION": "Ce composant, quant à lui, affichera un graphique en ligne montrant des données pour plusieurs pays. Essayez d'interagir avec les étiquettes pour en afficher ou en masquer certaines",
+        "SUBDESCRIPTION": "Essayez d'interagir avec les étiquettes pour en afficher ou masquer certaines données",
+        "CHART": {
+            "TAGS": {
+                "COUNTRIES": {
+                    "SPAIN": "Espagne",
+                    "FRANCE": "France",
+                    "GERMANY": "Allemagne"
+                }
+            }
+        }
+    }
 }

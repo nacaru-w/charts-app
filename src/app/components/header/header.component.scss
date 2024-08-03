@@ -1,12 +1,34 @@
 .header-nav {
-    margin-block: 1em;
+    margin-top: 5vh;
+    margin-bottom: 1em;
     display: flex;
-    gap: 1em;
+    gap: 3em;
     justify-content: center;
 
     .home-icon,
-    .globe-icon {
+    .globe-icon,
+    .pie-icon {
         font-size: larger;
+    }
+
+    .chart-menu-options {
+        display: flex;
+        gap: 0.25em;
+    }
+
+    .chart-menu-options-dropdown {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .chart-menu-options {
+            display: none;
+        }
+
+        .chart-menu-options-dropdown {
+            display: unset;
+        }
+
     }
 
 }

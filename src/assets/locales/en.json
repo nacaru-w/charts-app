@@ -1,13 +1,46 @@
 {
-    "INTRO": "This app shows data statictics!",
+    "INTRO": "This app shows data statistics!",
     "SUBINTRO": "Use the buttons at the top to access the different charts",
-    "PIE": "Pie",
-    "BAR": "Bar",
-    "LINE": "Line",
-    "PIE-DESCRIPTION": "This part of the page will show a pie chart instead",
-    "PIE-SUBDESCRIPTION": "Try interacting with the different data labels to show or hide information as you will",
-    "BAR-DESCRIPTION": "This is a bar chart! It will display some useful data that is gathered dynamically through API interaction",
-    "BAR-SUBDESCRIPTION": "You can select and remove specific data by using the labels at the top",
-    "LINE-DESCRIPTION": "This component, instead, will show a line chart displaying data for several countries. Try interacting with the labels to show and hide some of them",
-    "LINE-SUBDESCRIPTION": "Try interacting with the labels to show and hide some of them"
+    "PIE": {
+        "NAME": "Pie",
+        "DESCRIPTION": "This part of the page will show a pie chart instead",
+        "SUBDESCRIPTION": "Try interacting with the different data labels to show or hide information as you will",
+        "CHART": {
+            "LEGEND": [
+                "Democrat",
+                "Republican",
+                "Independent",
+                "Other"
+            ],
+            "TAGS": {
+                "VOTES": "Total votes"
+            }
+        }
+    },
+    "BAR": {
+        "NAME": "Bar",
+        "DESCRIPTION": "This is a bar chart! It will display some useful data that is gathered dynamically through API interaction",
+        "SUBDESCRIPTION": "You can select and remove specific data by using the labels at the top",
+        "CHART": {
+            "LEGEND": [
+                "Turquoise",
+                "Blue",
+                "Purple"
+            ]
+        }
+    },
+    "LINE": {
+        "NAME": "Line",
+        "DESCRIPTION": "This component, instead, will show a line chart displaying data for several countries. Try interacting with the labels to show and hide some of them",
+        "SUBDESCRIPTION": "Try interacting with the labels to show and hide some of them",
+        "CHART": {
+            "TAGS": {
+                "COUNTRIES": {
+                    "SPAIN": "Spain",
+                    "FRANCE": "France",
+                    "GERMANY": "Germany"
+                }
+            }
+        }
+    }
 }

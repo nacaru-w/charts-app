@@ -6,10 +6,25 @@
 body {
     display: flex;
     justify-content: center;
+    background-color: whitesmoke;
 
     .chart-component-container {
         padding: 1em;
         width: min(1000px, 95%);
+        margin-inline: auto;
+
+        p {
+            text-align: center;
+        }
+
+        .chart {
+            position: relative;
+            display: flex;
+            margin-block: 5vh;
+            justify-content: center;
+            min-height: 40vh;
+        }
+
     }
 
 }
