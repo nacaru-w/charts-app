@@ -3,7 +3,10 @@ import * as en from '../../../../assets/locales/en.json'
 import * as es from '../../../../assets/locales/es.json'
 import * as fr from '../../../../assets/locales/fr.json'
 
+// Las etiquetas inferiores no varían según el idioma en este caso
 const labels = ['Q1', 'Q2', 'Q3', 'Q4'];
+
+// Se obtienen de la carpeta `locales`, donde se hallan todas las traducciones
 export const countryLabels = {
     spain: {
         en: en.LINE.CHART.TAGS.COUNTRIES.SPAIN,
@@ -20,33 +23,33 @@ export const countryLabels = {
         es: es.LINE.CHART.TAGS.COUNTRIES.GERMANY,
         fr: fr.LINE.CHART.TAGS.COUNTRIES.GERMANY
     }
+};
 
-}
-
+// Documentación en https://www.chartjs.org/docs/latest/charts/line.html 
 export const lineData = {
     labels: labels,
     datasets: [
         {
             label: countryLabels.spain.en,
-            data: [8, 11, 15, 16],
+            data: [8, 4, -1, 0],
             borderColor: colors.borderColors.teal,
             tension: 0.3
 
         },
         {
             label: countryLabels.france.en,
-            data: [8, 9, 6, 4],
+            data: [4, 0, -3, 0],
             borderColor: colors.borderColors.blue,
             tension: 0.3
         },
         {
             label: countryLabels.germany.en,
-            data: [4, 6, 12, 4],
+            data: [5, 3, 1, 0],
             borderColor: colors.borderColors.purple,
             tension: 0.3
         }
     ]
-}
+};
 
 export const lineOptions = {
     maintainAspectRatio: false,
@@ -56,4 +59,4 @@ export const lineOptions = {
             beginAtZero: true
         }
     }
-}
+};
