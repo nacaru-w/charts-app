@@ -1,7 +1,9 @@
 <ul ngbNav #nav="ngbNav" class="nav-pills header-nav">
+    <!-- Icono para volver a home/main -->
     <li ngbNavItem routerLink="main">
         <button ngbNavLink routerLink="home"><i class="las la-home home-icon"></i></button>
     </li>
+    <!-- Menú normal de selección de gráficos -->
     <div class="chart-menu-options">
         <li ngbNavItem>
             <button ngbNavLink routerLink="pie">{{ 'PIE.NAME' | translate }}</button>
@@ -13,6 +15,7 @@
             <button ngbNavLink routerLink="line">{{ 'LINE.NAME' | translate }}</button>
         </li>
     </div>
+    <!-- Menú responsive de selección de gráficos -->
     <div class="chart-menu-options-dropdown">
         <div ngbDropdown class="lang-menu">
             <button type="button" class="btn btn-outline-primary" id="languages" ngbDropdownToggle>
@@ -25,6 +28,7 @@
             </div>
         </div>
     </div>
+    <!-- Menú de idiomas -->
     <li ngbNavItem>
         <div ngbDropdown class="lang-menu">
             <button type="button" class="btn btn-outline-primary" id="languages" ngbDropdownToggle>
