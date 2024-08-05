@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:netberry-exercise": "node dist/netberry-exercise/server/server.mjs"
+    "serve:ssr:netberry-exercise": "node dist/netberry-exercise/server/server.mjs",
+    "ghpages": "ng build --output-path rendered --base-href /charts-app/ && rm -rf docs && mv rendered/browser docs && rm -rf rendered"
   },
   "private": true,
   "dependencies": {
