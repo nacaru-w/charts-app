@@ -1,3 +1,9 @@
+/**
+ * Componente MainComponent
+ * 
+ * Proporciona una breve descripción de la función de la página web
+ */
+
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
