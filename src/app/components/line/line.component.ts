@@ -71,11 +71,11 @@ export class LineComponent implements OnInit, OnDestroy {
   }
 
   /**
- * Añade puntos al gráfico.
- * @param countryPoints Los puntos a añadir en forma de objeto.
- * El objeto contiene el país y el número de puntos
- */
-  addPointsToChart(countryPoints: CountryPoints) {
+  * Añade puntos al gráfico.
+  * @param countryPoints Los puntos a añadir en forma de objeto.
+  * El objeto contiene el país y el número de puntos
+  */
+  private addPointsToChart(countryPoints: CountryPoints) {
     // Para poder modificar los datos mediante índice, los datos del array
     // deben estar dispuestos en el mismo orden que en line-config.ts
     const countries = ['Spain', 'France', 'Germany'];
@@ -87,7 +87,7 @@ export class LineComponent implements OnInit, OnDestroy {
   /**
   * Inicializa el gráfico de líneas.
   */
-  initializeChart(): void {
+  private initializeChart(): void {
     const ctx = <HTMLCanvasElement>document.getElementById('lineChart');
 
     Chart.defaults.font.family = bodyFont;
@@ -109,7 +109,6 @@ export class LineComponent implements OnInit, OnDestroy {
   */
   subscribeToAPIEndpoint(): void {
     this.subscription = this.api.getCountryPointsFromAPI().subscribe((res: CountryPoints) => {
-      console.log(res)
       this.addPointsToChart(res);
     })
   }
