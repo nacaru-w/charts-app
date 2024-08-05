@@ -83,7 +83,7 @@ export class apiService {
  */
   getCountryPointsFromAPI(): Observable<CountryPoints> {
     const countries: CountryPoints["country"][] = ['Spain', 'France', 'Germany'];
-    return interval(500).pipe(
+    return interval(1000).pipe(
       map(() => {
         const country = countries[this.getRandomNumber(countries.length)];
         const number = this.maybeMakeNumberNegative(this.getRandomNumber(3));
