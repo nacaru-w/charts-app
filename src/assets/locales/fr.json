@@ -31,8 +31,8 @@
     },
     "LINE": {
         "NAME": "Ligne",
-        "DESCRIPTION": "Ce composant, quant à lui, affichera un graphique en ligne montrant des données pour plusieurs pays. Essayez d'interagir avec les étiquettes pour en afficher ou en masquer certaines",
-        "SUBDESCRIPTION": "Essayez d'interagir avec les étiquettes pour en afficher ou masquer certaines données",
+        "DESCRIPTION": "Ce composant, affichera un graphique en ligne montrant des données pour plusieurs pays.",
+        "SUBDESCRIPTION": "Interagiez avec les étiquettes pour en afficher ou masquer certaines données",
         "CHART": {
             "TAGS": {
                 "COUNTRIES": {

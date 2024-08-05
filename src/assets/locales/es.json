@@ -31,7 +31,7 @@
     },
     "LINE": {
         "NAME": "Línea",
-        "DESCRIPTION": "Este componente, en cambio, mostrará un gráfico de líneas que muestra datos de varios países. Intenta interactuar con las etiquetas para mostrar y ocultar datos",
+        "DESCRIPTION": "Este componente, en cambio, mostrará un gráfico de líneas que muestra datos de varios países.",
         "SUBDESCRIPTION": "Interactúa con las etiquetas para mostrar y ocultar parte de los datos",
         "CHART": {
             "TAGS": {

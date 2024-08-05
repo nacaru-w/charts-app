@@ -31,8 +31,8 @@
     },
     "LINE": {
         "NAME": "Line",
-        "DESCRIPTION": "This component, instead, will show a line chart displaying data for several countries. Try interacting with the labels to show and hide some of them",
-        "SUBDESCRIPTION": "Try interacting with the labels to show and hide some of them",
+        "DESCRIPTION": "This component, instead, will show a line chart displaying data for several countries.",
+        "SUBDESCRIPTION": "Try interacting with the labels to show and hide some of them.",
         "CHART": {
             "TAGS": {
                 "COUNTRIES": {
