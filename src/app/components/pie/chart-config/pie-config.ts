@@ -3,6 +3,7 @@ import * as en from '../../../../assets/locales/en.json'
 import * as es from '../../../../assets/locales/es.json'
 import * as fr from '../../../../assets/locales/fr.json'
 
+// Se obtienen de la carpeta `locales`, donde se hallan todas las traducciones
 export const labels = {
     party: {
         en: en.PIE.CHART.LEGEND,
@@ -16,11 +17,12 @@ export const labels = {
     }
 }
 
+// Documentación en https://www.chartjs.org/docs/latest/charts/pie.html 
 export const pieData = {
     labels: [],
     datasets: [{
         label: 'Votes',
-        data: [455, 433, 277, 77],
+        data: [0, 0, 0, 0],
         backgroundColor: [
             colors.borderColors.blue,
             colors.borderColors.red,
@@ -29,4 +31,8 @@ export const pieData = {
         ],
         hoverOffset: 4
     }]
+}
+
+export const pieOptions = {
+    maintainAspectRatio: false
 }
